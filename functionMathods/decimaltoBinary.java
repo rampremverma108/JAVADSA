@@ -17,5 +17,4 @@ public class decimaltoBinary{
         System.out.println("Binary Number of "+myNum+" is: " + bin);
         sc.close();
     }
-
 }
