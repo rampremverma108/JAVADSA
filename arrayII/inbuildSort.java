@@ -8,6 +8,13 @@ public class Sort{
         System.out.println(Arrays.toString(nu));
     }
 
+    public static int compare(int a, int b){
+        // a < b -ve
+        // a == b 0 
+        // a > b +ve
+        return a-b;
+    }
+
 
         public static void main(String args[]){
         int arr[] = {5,4,1,3,2};
@@ -18,5 +25,6 @@ public class Sort{
         Arrays.sort(arr, 0, 3);
         System.out.println("Partially sorted arr (0 to 2): " + Arrays.toString(arr));
        reverseOrder(nu);
+       System.out.println(compare(5, 6));
         }
     }
