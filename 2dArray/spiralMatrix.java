@@ -2,16 +2,16 @@ import java.util.*;
 
 public class spiralMatrix{
 
-public class void spiral(int matrix[][]){
+public static void spiral(int matrix[][]){
     int startRow = 0;
     int startCol = 0;
     int endRow = matrix.length-1;
-    int endCol = matrix.length-1;
+    int endCol = matrix[0].length-1;
 
     while(startRow <= endRow && startCol <= endCol){
         //top
         for(int j=startCol; j<=endCol; j++){
-            System.out.print(matrix[startRow[j]+" "]);
+            System.out.print(matrix[startRow][j]+" ");
         }
         //right
         for(int i = startRow+1; i<=endRow; i++){
