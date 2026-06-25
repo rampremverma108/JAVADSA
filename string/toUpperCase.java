@@ -18,7 +18,6 @@ public static String upperCase(String str){
     }
     return sb.toString();
 }
-
     public static void main(String agrs[]){
         String str = "hi, i am programer, I develops logic and concept";
         // StringBuilder sb = new StringBuilder("");
