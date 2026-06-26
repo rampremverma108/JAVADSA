@@ -3,4 +3,4 @@ public class rightShiftoperator{
         System.out.println(6>>1);
     }
 }
-//OUTPUT: 20
+//OUTPUT: 3
