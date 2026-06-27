@@ -14,4 +14,4 @@ public static void main(String args[]){
     System.out.println(set_ithBit(n, i));
 }
 }
-//OUTPUT: 14
+//OUTPUT: 14   if n = 20, i =2
