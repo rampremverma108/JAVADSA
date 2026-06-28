@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class ith_bit{
-public static int set_ithBit(int n, int i ){
+public static int setIthBit(int n, int i ){
     int bitMask = 1<<i;
     return n | bitMask;
 
@@ -11,7 +11,7 @@ public static void main(String args[]){
     int n = sc.nextInt();
     System.out.print("Input place to know Ith bit : ");
     int i = sc.nextInt();
-    System.out.println(set_ithBit(n, i));
+    System.out.println(setIthBit(n, i));
 }
 }
 //OUTPUT: 14   if n = 20, i =2
