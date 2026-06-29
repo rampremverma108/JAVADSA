@@ -11,4 +11,4 @@ public class clrRangeBit{
         System.out.println(clearBitRange(10, 2, 4));
     }
 }
-
+//OUTPUT:- 2
