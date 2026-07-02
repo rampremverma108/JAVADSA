@@ -1,8 +1,8 @@
-Encapulation
+ENCAPULATION
 -------------
 Encapulation is define as the wrapping up of data & methods under a single unit. It also implementsdata hiding.
 
-Constructors
+CONSTRUCTOR
 ------------
 Constructor is a special methods which is invoked automatically at the time of object creation.
 
@@ -10,3 +10,8 @@ Constructor is a special methods which is invoked automatically at the time of o
 -->Constructor don't have a return type (Not even void)
 -->Construcor are only called once, at object creation.
 --> Memory allocation happens when constructor is called.
+
+Types of Constructor...
+1. Non-parameterized 
+2.parameterized
+3.Copy Constructor
