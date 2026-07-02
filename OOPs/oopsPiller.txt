@@ -1,0 +1,3 @@
+Encapulation
+-------------
+Encapulation is define as the wrapping up of data & methods under a single unit. It also implementsdata hiding.
