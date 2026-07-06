@@ -40,3 +40,11 @@ Base class--------to------Drive class-------------Drived Class
 
 4.Hybrid Inheritance
 It combines two or more different types of inheritance (like single, multiple, multilevel, or hierarchical) within a single program or class hierarchy.
+
+Polymorphism
+==============
+1. Compile Time Polymorphism
+    * Method Overloading :-Multiple funtion with the same name but diiferent parameters.
+
+2. Run Time Polymorphism
+    * Method Overriding :-
