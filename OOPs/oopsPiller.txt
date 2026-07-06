@@ -47,4 +47,4 @@ Polymorphism
     * Method Overloading :-Multiple funtion with the same name but diiferent parameters.
 
 2. Run Time Polymorphism
-    * Method Overriding :-
+    * Method Overriding :- Parent and child classes both contain the same function with a different defination.
