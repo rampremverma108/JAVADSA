@@ -23,3 +23,20 @@ Deep Copy:It creates a completely new and separate copy of both the outer object
 Inhereitance
 =============
 Inhereitance is when properties & methods of base class are passed on a drived class.
+
+Types of Inheritance:-
+1. Single Level Inheritance
+Base-------to------>Drive
+
+2. Multi Level Inheritance
+Base class--------to------Drive class-------------Drived Class 
+
+3. Hierarchial Inheritance
+        Base Class
+        /      \
+       /        \
+    Drived     Drived
+    Class      Class
+
+4.Hybrid Inheritance
+It combines two or more different types of inheritance (like single, multiple, multilevel, or hierarchical) within a single program or class hierarchy.
