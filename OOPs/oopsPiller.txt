@@ -57,3 +57,12 @@ Hiding all the unncersssary details and showing only the important to the user.
     - cannot create an instance of abstact class
     - can have abstract/Non-abstract.
     - can have constructors.
+
+Interfaces
+===========
+It is the blue print of class.
+Interface has 100% abstraction, and multiple Inheritance.
+
+-All methods are public, abstract, & without implementation.
+-Used to archived total abstraction
+-Variables in the interface are final, public and static
