@@ -48,3 +48,12 @@ Polymorphism
 
 2. Run Time Polymorphism
     * Method Overriding :- Parent and child classes both contain the same function with a different defination.
+
+Abstraction
+============
+Hiding all the unncersssary details and showing only the important to the user.
+
+>>Abstrct class
+    - cannot create an instance of abstact class
+    - can have abstract/Non-abstract.
+    - can have constructors.
