@@ -3,7 +3,7 @@ public class TestInheritance{
         Vehical obj1 = new Car();
         obj1.print();
         Vehical obj2 = new Vehical();
-        obj2.print();
+        obj2.print(); 
     }
 }
 
