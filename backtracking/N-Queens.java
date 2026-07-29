@@ -5,11 +5,14 @@ public class NQueens{
             printBoard(board);
             return;
         }
-        //col loop
+        //column loop
           for(int j=0; j<board.length; j++){
-        board[row][j] = 'Q';
-         Queens(board, row+1);   // sahi
-          board[row][j] = 'x';
+            if(isSafe(board, row, j)){
+            board[row][j] = 'Q';
+            Queens(board, row+1);
+            board[row][j] = 'x';
+            }
+       
 }
     }
 
@@ -24,7 +27,7 @@ public class NQueens{
     }
 
     public static void main(String args[]){
-        int n = 2;
+        int n = 4;
         char board[][] = new char[n][n];
         //initialize
         for(int i=0; i<n; i++){
