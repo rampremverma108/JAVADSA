@@ -1,4 +1,15 @@
-public class Sudoku{
+public class Sudokuu{
+    public static boolean sudukuSolver (int sudoku [][], int row, int col){
+        //base case
+
+        //recursion
+        for(int digit=1; digit<=; digit++){
+            if(isSafe(sudoku, row, col, digit)){
+                sudoku[row][col] = digit;
+                sudukuSolver(sudoku, row, col);
+            }
+        }
+    }
     public static void main(String args[]){
         int sudoku[][] = {{0,0,8,0,0,0,0,0,0},
         {4,9,0,1,5,7,0,0,2},
