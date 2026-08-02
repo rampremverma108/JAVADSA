@@ -3,10 +3,15 @@ public class Sudokuu{
         //base case
 
         //recursion
+        int nextRow = ro, nextCol = col+1;
+        if(col+1 == 9){
+            nextRow = row+1;
+            nextCol =0;
+        }
         for(int digit=1; digit<=; digit++){
             if(isSafe(sudoku, row, col, digit)){
                 sudoku[row][col] = digit;
-                sudukuSolver(sudoku, row, col);
+                sudukuSolver(sudoku, nextRow, nextCol);
             }
         }
     }
