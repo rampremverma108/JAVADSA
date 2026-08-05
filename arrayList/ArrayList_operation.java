@@ -12,5 +12,19 @@ public class ArrayList_representation{
         list2.add("Hello");
         list2.add("World");
         System.out.println(list2);
+
+        int element = list.get(1);
+        System.out.println(element);
+
+        //delete
+        list.remove(1);
+        System.out.println(list);
+
+        //set
+        list.set(1, 5);
+        System.out.println(list);
+
+        //contains
+        System.out.println(list.contains(5));
     }
 }
