@@ -8,6 +8,9 @@ public class ArrayList_representation{
         list.add(1);
         list.add(2);
         list.add(3);
+        list.add(4);
+        list.add(5);
+        list.add(6);
         System.out.println(list);
         list2.add("Hello");
         list2.add("World");
@@ -26,5 +29,11 @@ public class ArrayList_representation{
 
         //contains
         System.out.println(list.contains(5));
+
+    //size
+        System.out.println("Size of the list is: " + list.size());
+        for(int i = 0; i < list.size(); i++){
+            System.out.print(list.get(i) + " ");
+        }
     }
 }
