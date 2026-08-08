@@ -13,5 +13,9 @@ public class collectionSort{
         System.out.println("Before sorting: " + list);
         Collections.sort(list);
         System.out.println("After sorting: " + list);
+
+        //desending order
+        Collections.sort(list, Collections.reverseOrder()); //comparator fn
+        System.out.println("After sorting in descending order: " + list);
     }
 }
