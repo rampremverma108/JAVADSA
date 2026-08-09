@@ -14,5 +14,16 @@ public class multiDimensional{
         mainlist.add(list2);
 
         System.out.println(mainlist);
+
+        // ek ek list ko nikalne ke liye
+        for(int i=0; i<mainlist.size(); i++){
+            ArrayList<Integer> currlist = mainlist.get(i);
+            for(int j=0; j<currlist.size(); j++){
+                System.out.print(currlist.get(j) + " ");
+            }
+            System.out.println();
+        }
+
+
     }
 }
