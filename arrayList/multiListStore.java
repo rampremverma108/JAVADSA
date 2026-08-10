@@ -30,6 +30,6 @@ public class MultiListStore {
                 System.out.print(currList.get(j) + " ");
             }
             System.out.println();
-         }
+          }
     }
 }
