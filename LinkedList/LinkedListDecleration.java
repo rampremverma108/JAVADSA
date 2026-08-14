@@ -12,4 +12,4 @@ public class LinkedList{
     public static void main(String[] args) {
         Node head = new Node(1);
     }
-}git
+}
