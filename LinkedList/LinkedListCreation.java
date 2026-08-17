@@ -9,7 +9,7 @@ class Node {
     }
 }
 
-public class Main {
+public class LinkedListCreation {
     public static void main(String[] args) {
         // 1. Create individual nodes
         Node node1 = new Node(10);
