@@ -28,7 +28,7 @@ class LinkedList {
     }
 }
 
-public class Main {
+public class InsertionNode {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
