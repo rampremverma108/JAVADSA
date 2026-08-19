@@ -40,8 +40,8 @@ public void print(){
 
 public static void main(String[] args) {
     PrintLL ll = new PrintLL();
-    ll.addLast(1);
     ll.addLast(2);
+    ll.addLast(1);
     ll.print();
 }
 }
