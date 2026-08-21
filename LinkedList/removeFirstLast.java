@@ -1,4 +1,4 @@
-public class RemoveFirstLast {
+public class removeFirstLast {
     // Node Structure
     public static class Node {
         int data;
@@ -112,11 +112,31 @@ public class RemoveFirstLast {
         head = head.next;
         return val;
     }
+
+    //remove last
+    public int removeLast() {
+        if (head == null) {
+            System.out.println("LL is empty");
+            return Integer.MIN_VALUE;
+        } else if (head.next == null) {
+            int val = head.data;
+            head = tail = null;
+            return val;
+        }
+        Node prev = head;
+        for (Node curr = head; curr.next != null; curr = curr.next) {
+            prev = curr;
+        }
+        int val = prev.next.data;
+        prev.next = null;
+        tail = prev;
+        return val;
+    }
     
 
 
     public static void main(String[] args) {
-        AddMiddle ll = new AddMiddle();
+         removeFirstLast ll = new removeFirstLast();
 
         System.out.println("--- Building Base List ---");
         ll.addFirst(20);        // List: 20 -> null
@@ -132,6 +152,7 @@ public class RemoveFirstLast {
         System.out.println("\n--- Adding at Middle automatically (addMiddle(data)) ---");
         ll.addMiddle(25);       // Finds middle (20) and inserts 25 after it
         ll.removeFirst();
+        ll.removeLast();
         ll.print();
     }
 }
