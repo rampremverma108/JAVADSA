@@ -48,6 +48,21 @@ public class SearchinLL{
         return -1; //if output Key not found
     }
 
+    //search Recursively
+    public int searchRec(Node head, int key) {
+        if (head == null) {
+            return -1;
+        }
+        if (head.data == key) {
+            return 0;
+        }
+        int idx = searchRec(head.next, key);
+        if (idx == -1) {
+            return -1;
+        }
+        return idx + 1;
+    }
+
     public static void main(String args[]){
        SearchinLL ll = new SearchinLL();
        ll.addLast(10);
@@ -57,5 +72,6 @@ public class SearchinLL{
        ll.addLast(50);
        ll.print();
        System.out.println("Search value at Index: " + ll.search(40)); // Output: Index of 40: 3
+       System.out.println("Search value at Index (Recursively): " + ll.searchRec(head, 30)); // Output: Index of 30: 2
     }
 }
