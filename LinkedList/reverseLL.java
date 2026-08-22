@@ -78,6 +78,30 @@ public class reverseLL{
         head = prev; // Update head to the new first node
     }
 
+    //remove nth node from end of linked list
+    public void removeNthFromEnd(int n) {
+        Node dummy = new Node(0);
+        dummy.next = head;
+        Node first = dummy;
+        Node second = dummy;
+
+        // Move first n+1 steps ahead
+        for (int i = 0; i <= n; i++) {
+            first = first.next;
+        }
+
+        // Move first to the end, maintaining the gap
+        while (first != null) {
+            first = first.next;
+            second = second.next;
+        }
+
+        // Remove the nth node from end
+        second.next = second.next.next;
+
+        head = dummy.next; // Update head in case the first node was removed
+    }
+
     public static void main(String args[]){
        reverseLL ll = new reverseLL();
        ll.addLast(10);
@@ -90,5 +114,7 @@ public class reverseLL{
        System.out.println("Search value at Index (Recursively): " + ll.searchRec(head, 30)); // Output: Index of 30: 2
         ll.reverse();
         ll.print(); // Output: 50 -> 40 -> 30 -> 20 -> 10 -> null
+        ll.removeNthFromEnd(2);
+        ll.print(); // Output: 50 -> 40 -> 30 -> 10 ->
     }
 }
