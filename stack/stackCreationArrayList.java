@@ -1,8 +1,7 @@
+//Stack implementation using ArrayList in Java
 import java.util.ArrayList;
 
-public class stackCreation{
-
-    //stack through arraylist
+public class stackCreationArrayList {
     public static class Stack{
         static ArrayList<Integer> list = new ArrayList<>();
         public static boolean isEmpty(){
