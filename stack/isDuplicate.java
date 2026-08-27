@@ -27,7 +27,7 @@ public class isDuplicate {
             }
         }
 
-        // Loop poora hone par agar koi duplicate nahi mila
+        // duplicate not found hone pr
         return false;
     }
 
