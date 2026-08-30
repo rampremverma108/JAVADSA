@@ -19,10 +19,15 @@ public class queueImplementation{
     
 public static void add(int data){
      if(rear = size-1){
-            System.out.println("queue is Full");
+            System.out.println("queue is full");
             return;
         }
+
+        rear = rear +1;
+        arr[rear] = data;
 }
+
+
 
     public static void main(String[] args) {
        
