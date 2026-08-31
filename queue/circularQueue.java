@@ -2,12 +2,12 @@ import java.util.*;
 
 public class CircularQueue {
     static class Queue {
-       static int arr[];
-       static int size;
-       static int rear;
-       static int front;
+        private int arr[];
+        private int size;
+        private int rear;
+        private int front;
 
-        // Constructor belongs inside the Queue class
+        // Constructor
         Queue(int n) {
             arr = new int[n];
             size = n;
@@ -19,45 +19,53 @@ public class CircularQueue {
             return rear == -1 && front == -1;
         }
 
-        public static boolean isFull(){
-            return (rear +1) % size == front;
+        public boolean isFull() {
+            return (rear + 1) % size == front;
         }
-        //add
+
+        // Add (Enqueue) - O(1)
         public void add(int data) {
             if (isFull()) { 
                 System.out.println("Queue is full");
                 return;
             }
 
-            //add 1 st element
-            if(front == -1){
+            // Set front to 0 when inserting the first element
+            if (front == -1) {
                 front = 0;
             }
-            rear = (rear +1) % size;
+            rear = (rear + 1) % size;
             arr[rear] = data;
         }
 
+        // Remove (Dequeue) - O(1)
         public int remove() {
             if (isEmpty()) {
                 System.out.println("Empty queue");
                 return -1;
             }
 
-            int front = arr[0];
-            for (int i = 0; i < rear; i++) {
-                arr[i] = arr[i + 1];
+            int result = arr[front];
+
+            // If queue has only one element, reset to initial state
+            if (rear == front) {
+                rear = -1;
+                front = -1;
+            } else {
+                front = (front + 1) % size; // Move front circularly
             }
-            rear = rear - 1;
-            return front;
+
+            return result;
         }
 
+        // Peek - O(1)
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Empty queue");
                 return -1;
             }
 
-            return arr[0];
+            return arr[front];
         }
     }
 
