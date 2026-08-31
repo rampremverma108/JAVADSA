@@ -51,7 +51,14 @@ public class CircularQueue {
             return front;
         }
 
-       
+        public int peek() {
+            if (isEmpty()) {
+                System.out.println("Empty queue");
+                return -1;
+            }
+
+            return arr[0];
+        }
     }
 
     public static void main(String[] args) {
