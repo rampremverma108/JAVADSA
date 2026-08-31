@@ -37,6 +37,20 @@ public class CircularQueue {
             arr[rear] = data;
         }
 
+        public int remove() {
+            if (isEmpty()) {
+                System.out.println("Empty queue");
+                return -1;
+            }
+
+            int front = arr[0];
+            for (int i = 0; i < rear; i++) {
+                arr[i] = arr[i + 1];
+            }
+            rear = rear - 1;
+            return front;
+        }
+
        
     }
 
