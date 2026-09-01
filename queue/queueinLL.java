@@ -38,7 +38,23 @@ public class queueinLL {
         }
         int front = head.data;
 
-    
+        // If one element
+        if (tail == head) {
+            tail = head = null;
+        } else {
+            head = head.next;
+        }
+        return front;
+    }
+
+    // View
+    public static int peek() {
+        if (isEmpty()) {
+            System.out.println("empty queue");
+            return -1;
+        }
+        return head.data;
+    }
 
     public static void main(String[] args) {
         // Adding
