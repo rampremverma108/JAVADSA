@@ -62,10 +62,10 @@ public class queueinLL {
         add(2);
         add(3);
 
-        // Printing
-        // while (!isEmpty()) {
-        //     System.out.println(peek());
-        //     remove();
-        // }
+      //  Printing
+        while (!isEmpty()) {
+            System.out.println(peek());
+            remove();
+        }
     }
 }
