@@ -30,6 +30,16 @@ public class queueinLL {
         tail = newNode;
     }
 
+     // Remove 
+    public static int remove() {
+        if (isEmpty()) {
+            System.out.println("empty queue");
+            return -1;
+        }
+        int front = head.data;
+
+    
+
     public static void main(String[] args) {
         // Adding
         add(1);
